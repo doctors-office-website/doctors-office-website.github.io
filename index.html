@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>{{site.title}}</title>
+     <title>Health - Medical Website Template</title>
 <!--
 
 Template 2098 Health
@@ -45,13 +45,13 @@ http://www.tooplate.com/view/2098-health
                <div class="row">
 
                     <div class="col-md-4 col-sm-5">
-                         <p>Welcome to a {{site.practice_name}}</p>
+                         <p class="editable">Welcome to a Professional Health Care</p>
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
-                         <span class="phone-icon"><i class="fa fa-phone"></i> {{site.phone}}</span>
-                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i>{{site.hours}}</span>
-                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">{{site.email}}</a></span>
+                         <span class="phone-icon editable"><i class="fa fa-phone"></i> 010-060-0160</span>
+                         <span class="date-icon editable"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
+                         <span class="email-icon editable"><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></span>
                     </div>
 
                </div>
@@ -99,8 +99,8 @@ http://www.tooplate.com/view/2098-health
                               <div class="item item-first">
                                    <div class="caption">
                                         <div class="col-md-offset-1 col-md-10">
-                                             <h3>Let's make your life happier</h3>
-                                             <h1>Healthy Living</h1>
+                                             <h3 class="editable">Let's make your life happier</h3>
+                                             <h1 class="editable">Healthy Living</h1>
                                              <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
                                         </div>
                                    </div>
@@ -109,8 +109,8 @@ http://www.tooplate.com/view/2098-health
                               <div class="item item-second">
                                    <div class="caption">
                                         <div class="col-md-offset-1 col-md-10">
-                                             <h3>Aenean luctus lobortis tellus</h3>
-                                             <h1>New Lifestyle</h1>
+                                             <h3 class="editable">Aenean luctus lobortis tellus</h3>
+                                             <h1 class="editable">New Lifestyle</h1>
                                              <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
                                         </div>
                                    </div>
@@ -119,8 +119,8 @@ http://www.tooplate.com/view/2098-health
                               <div class="item item-third">
                                    <div class="caption">
                                         <div class="col-md-offset-1 col-md-10">
-                                             <h3>Pellentesque nec libero nisi</h3>
-                                             <h1>Your Health Benefits</h1>
+                                             <h3 class="editable" >Pellentesque nec libero nisi</h3>
+                                             <h1 class="editable">Your Health Benefits</h1>
                                              <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
                                         </div>
                                    </div>
@@ -137,17 +137,18 @@ http://www.tooplate.com/view/2098-health
           <div class="container">
                <div class="row">
 
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6 class="editable"">
                          <div class="about-info">
                               <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i class="fa fa-h-square"></i>ealth Center</h2>
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <p>{{site.quote.body}}</p>
+                                   <p>Aenean luctus lobortis tellus, vel ornare enim molestie condimentum. Curabitur lacinia nisi vitae velit volutpat venenatis.</p>
+                                   <p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna mattis. Ut placerat, diam a tempus vehicula.</p>
                               </div>
                               <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src={{site.quote.image}} class="img-responsive" alt="">
+                                   <img src="images/author-image.jpg" class="img-responsive editable" alt="">
                                    <figcaption>
-                                        <h3>{{site.quote.name}}</h3>
-                                        <p>{{site.quote.role}}</p>
+                                        <h3 class="editable">Dr. Neil Jackson</h3>
+                                        <p class="editable">General Principal</p>
                                    </figcaption>
                               </figure>
                          </div>
@@ -170,18 +171,63 @@ http://www.tooplate.com/view/2098-health
                     </div>
 
                     <div class="clearfix"></div>
-                    {% for doctor in page.doctors %}
+
                     <div class="col-md-4 col-sm-6">
-                         <div class="team-thumb wow fadeInUp" data-wow-delay="2s">
-                              <img src={{doctor.image}} class="img-responsive" alt="">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                              <img src="images/team-image1.jpg" class="img-responsive" alt="">
 
                                    <div class="team-info">
-                                        <h3>{{doctor.name}}</h3>
-                                        <p>{{doctor.role}}</p>
+                                        <h3 class="editable">Nate Baston</h3>
+                                        <p class="editable">General Principal</p>
                                         <div class="team-contact-info">
-                                             <p><i class="fa fa-phone"></i> {{doctor.number}}</p>
-                                             <p><i class="fa fa-envelope-o"></i> <a href="#">{{doctor.email}}</a></p>
+                                             <p class="editable"><i class="fa fa-phone"></i> 010-020-0120</p>
+                                             <p class="editable"><i class="fa fa-envelope-o"></i> <a href="#">general@company.com</a></p>
                                         </div>
+                                        <ul class="social-icon">
+                                             <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                                             <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                        </ul>
+                                   </div>
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <img src="images/team-image2.jpg" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3 class="editable">Jason Stewart</h3>
+                                        <p class="editable">Pregnancy</p>
+                                        <div class="team-contact-info">
+                                             <p class="editable"><i class="fa fa-phone"></i> 010-070-0170</p>
+                                             <p class="editable"><i class="fa fa-envelope-o"></i> <a href="#">pregnancy@company.com</a></p>
+                                        </div>
+                                        <ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square"></a></li>
+                                             <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                             <li><a href="#" class="fa fa-flickr"></a></li>
+                                        </ul>
+                                   </div>
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <img src="images/team-image3.jpg" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3 class="editable">Miasha Nakahara</h3>
+                                        <p class="editable">Cardiology</p>
+                                        <div class="team-contact-info">
+                                             <p class="editable"><i class="fa fa-phone"></i> 010-040-0140</p>
+                                             <p class="editable"><i class="fa fa-envelope-o"></i> <a href="#">cardio@company.com</a></p>
+                                        </div>
+                                        <ul class="social-icon">
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                        </ul>
                                    </div>
 
                          </div>
